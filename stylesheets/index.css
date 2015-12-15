@@ -1,1 +1,226 @@
-index.css
+ body
+ { 
+  padding-bottom: 40px; 
+   color: #5a5a5a; 
+   background-color: #FFFFFF; 
+ } 
+ 
+ 
+ h1 { 
+   font-family: 'Overlock', cursive; 
+   font-size: 80px; 
+ } 
+ 
+ 
+ /* CUSTOMIZE THE NAVBAR 
+17 -------------------------------------------------- */  
+ 
+ /* Special class on .container surrounding .navbar, used for positioning it into place. */ 
+ .navbar-wrapper { 
+   position: absolute; 
+   top: 0; 
+   right: 0; 
+   left: 0; 
+   z-index: 20; 
+ } 
+ 
+ 
+ /* Flip around the padding for proper display in narrow viewports */ 
+ .navbar-wrapper > .container { 
+   padding-right: 0; 
+   padding-left: 0; 
+32 } 
+33 .navbar-wrapper .navbar { 
+34   padding-right: 15px; 
+35   padding-left: 15px; 
+36 } 
+37 .navbar-wrapper .navbar .container { 
+38   width: auto; 
+39 } 
+40 
+ 
+41 /* CUSTOMIZE THE CAROUSEL 
+42 -------------------------------------------------- */ 
+43 
+ 
+44 /* Carousel base class */ 
+45 .carousel { 
+46   height: 500px; 
+47   margin-bottom: 60px; 
+48 } 
+49 /* Since positioning the image, we need to help out the caption */ 
+50 .carousel-caption { 
+51   z-index: 10; 
+52 } 
+53 
+ 
+54 /* Declare heights because of positioning of img element */ 
+55 .carousel .item { 
+56   height: 500px; 
+57   background-color: #777; 
+58 } 
+59 .carousel-inner > .item > img { 
+60   position: absolute; 
+61   top: 0; 
+62   left: 0; 
+63   min-width: 100%; 
+64   /*height: 500px;*/ 
+65 } 
+66 
+ 
+67 .jumbotron1 { 
+68   height: 300px; 
+69   padding-top: 100px; 
+70   padding-bottom: 20px; 
+71   background-image:url("../images/running2.jpg"); 
+72   background-position: 0% 25%; 
+73   background-size: cover; 
+74   background-repeat: no-repeat; 
+75   color: #FFFFFF; 
+76 }  
+77 
+ 
+78 .jumbotron2 { 
+79   height: 300px; 
+80   padding-top: 100px; 
+81   padding-bottom: 20px; 
+82   background-image:url("../images/avocado_toast.jpg"); 
+83   background-position: 0% 25%; 
+84   background-size: cover; 
+85   background-repeat: no-repeat; 
+86   color: #41A975; 
+87 }  
+88 
+ 
+89 .jumbotron3 { 
+90   height: 300px; 
+91   padding-top: 100px; 
+92   padding-bottom: 20px; 
+93   background-image:url("../images/reebok.jpg"); 
+94   background-position: 0% 25%; 
+95   background-size: cover; 
+96   background-repeat: no-repeat; 
+97   color: #7E4C94; 
+98 }  
+99 
+ 
+ .jumbotron4 { 
+   height: 300px; 
+   padding-top: 100px; 
+   padding-bottom: 20px; 
+   background-image:url("../images/richmond_bridge.jpg"); 
+   background-position: 0% 25%; 
+   background-size: cover; 
+   background-repeat: no-repeat; 
+   color: #FFFFFF; 
+ }  
+ 
+ 
+ .jumbotron5 { 
+   height: 300px; 
+   padding-top: 100px; 
+   padding-bottom: 20px; 
+   background-image:url("../images/richmond-upon-thames-009.jpg"); 
+   background-position: 0% 25%; 
+   background-size: cover; 
+   background-repeat: no-repeat; 
+   color: #FFFFFF; 
+ } 
+ 
+ 
+ .huge { 
+   font-size: 100px; 
+ } 
+ .introduction { 
+   padding-top:0px; 
+   padding-bottom:0px; 
+ } 
+ 
+ 
+ /* MARKETING CONTENT 
+131 -------------------------------------------------- */ 
+
+ 
+ /* Center align the text within the three columns below the carousel */ 
+ 
+ 
+ .marketing{ 
+   padding-top: 30px; 
+   padding-bottom: 20px; 
+ } 
+ .marketing .col-lg-4 { 
+   margin-bottom: 20px; 
+   text-align: center; 
+ } 
+ .marketing h2 { 
+   font-weight: normal; 
+ } 
+ .marketing .col-lg-4 p { 
+   margin-right: 10px; 
+   margin-left: 10px; 
+ } 
+ 
+ 
+ /* Featurettes 
+152 ------------------------- */ 
+ 
+ 
+ .featurette-divider { 
+   margin: 50px 0; /* Space out the Bootstrap <hr> more */ 
+ } 
+ 
+ 
+ /* Thin out the marketing headings */ 
+ .featurette-heading { 
+   font-weight: 300; 
+   line-height: 1; 
+   letter-spacing: -1px; 
+ } 
+ 
+ 
+ 
+ 
+ /* RESPONSIVE CSS 
+ -------------------------------------------------- */ 
+ 
+ 
+ @media (min-width: 768px) { 
+   /* Navbar positioning foo */ 
+   .navbar-wrapper { 
+     margin-top: 20px; 
+   } 
+   .navbar-wrapper .container { 
+     padding-right: 15px; 
+     padding-left: 15px; 
+   } 
+   .navbar-wrapper .navbar { 
+     padding-right: 0; 
+     padding-left: 0; 
+   } 
+ 
+ 
+   /* The navbar becomes detached from the top, so we round the corners */ 
+   .navbar-wrapper .navbar { 
+     border-radius: 4px; 
+   } 
+ 
+ 
+   /* Bump up size of carousel content */ 
+   .carousel-caption p { 
+     margin-bottom: 20px; 
+     font-size: 21px; 
+     line-height: 1.4; 
+   } 
+ 
+ 
+   .featurette-heading { 
+     font-size: 50px; 
+   } 
+ } 
+ 
+ 
+ @media (min-width: 992px) { 
+   .featurette-heading { 
+     margin-top: 120px; 
+   } 
+ } 
